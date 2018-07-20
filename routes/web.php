@@ -29,5 +29,11 @@ Route::get('/admin', 'Admin\DashboardController@index');
 */
 Route::group(['prefix'=>'admin','namespace'=>'Admin', ], function(){
     Route::get('/', 'DashboardController@index');
+
+    #=================   CATEGORIAS   ====================
     Route::resource('/categories', 'CategoriesController');
+
+    #=================   TAGS   ====================
+    Route::resource('/tags', 'TagsController');
+    
 });
