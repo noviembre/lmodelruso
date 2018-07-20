@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-
+use Illuminate\Support\Facades\Storage;
 class User extends Authenticatable
 {
     use Notifiable;
@@ -49,7 +49,7 @@ class User extends Authenticatable
     }
     public function remove()
     {
-        //$this->removeAvatar();
+        Storage::delete('/uploads/' . $this->image);
         $this->delete();
     }
     public function uploadAvatar($image)
