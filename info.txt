@@ -1,0 +1,7 @@
+Informacion de a pagina web.
+mi idea es crear una plantilla en laravel distinta a la que tenia
+esta te permitira aprender un poco mas el sluggable.
+Caracteristicas:
+1. Post : es Slugable
+2. category : es Slugable
+3. tag : es Slugable
