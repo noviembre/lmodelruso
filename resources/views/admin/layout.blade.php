@@ -444,7 +444,7 @@
 <script>
     $(document).ready(function (){
         var editor = CKEDITOR.replaceAll();
-        CKFINDER.setupCKEditor( editor );
+
     })
 </script>
 
